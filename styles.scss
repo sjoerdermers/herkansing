@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #c3cfe2;
+  font-family: roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+$shadow: 20px 20px 50px grey;
+
+@import "./section";
+
+@import "./footer";
+
+#fotosjoerd {
+  border-radius: 50%;
+  margin: 10px;
+  border: 8px solid white;
+  position: absolute;
+  top: 360px;
+  left: 180px;
+}
+
+// tweede opdracht -----------------------------------
+
+$border: solid red 3px;
+
+@mixin DJA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  @import "./big-screen";
+}
+
+@media only screen and (max-width: 1200px) {
+  @import "./medium-screen";
+}
+
+@media only screen and (max-width: 600px) {
+  @import "./small-screen";
+}
+
+// derde opdracht -----------------------------------
+
+.derdeOpdracht {
+  background-color: #c3cfe2;
+  display: grid;
+  height: 100vh;
+  width: 97.5%;
+  grid-template-columns: 1fr, 100px;
+  grid-template-rows: 1fr 300px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  list-style: none;
+  grid-area: 2/2;
+
+  li {
+    width: 250px;
+    position: relative;
+    left: 200px;
+  }
+
+  .blog {
+    background-color: #e17b77;
+    transition-duration: 1000ms;
+  }
+  .twitter {
+    background-color: #00aced;
+    transition-duration: 1000ms;
+  }
+  .linkedin {
+    background-color: #007bb6;
+    transition-duration: 1000ms;
+  }
+
+  .facebook {
+    background-color: #3b5998;
+    transition-duration: 1000ms;
+  }
+
+  .git-hub {
+    background-color: white;
+    transition-duration: 1000ms;
+  }
+}
+
+.blog:hover {
+  left: 100px;
+}
+.twitter:hover {
+  left: 100px;
+}
+.linkedin:hover {
+  left: 100px;
+}
+.facebook:hover {
+  left: 100px;
+}
+.git-hub:hover {
+  left: 100px;
+}

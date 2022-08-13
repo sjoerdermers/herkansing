@@ -1,0 +1,142 @@
+.fotos-totaal {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat (2, 400px);
+  grid-template-columns: repeat (3, 400px);
+}
+
+/* 
+  ----------------------Herhaal functies----------------------------- */
+
+@mixin herhaal-foto {
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 10px;
+  margin: 2em;
+}
+
+@mixin herhaal-text {
+  opacity: 0;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-family: roboto, verdana;
+  margin: 2em;
+  transition-duration: 500ms;
+}
+
+@mixin herhaal-hover {
+  opacity: 0.7;
+}
+
+/* 
+  ----------------------foto's------------------------------ */
+
+.foto1 {
+  @include herhaal-foto;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.foto2 {
+  grid-row: 1;
+  grid-column: 2;
+
+  @include herhaal-foto;
+}
+
+.foto3 {
+  grid-row: 1;
+  grid-column: 3;
+
+  @include herhaal-foto;
+}
+
+.foto4 {
+  grid-row: 2;
+  grid-column: 1;
+
+  @include herhaal-foto;
+}
+
+.foto5 {
+  @include herhaal-foto;
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.foto6 {
+  grid-row: 2;
+  grid-column: 3;
+
+  @include herhaal-foto;
+}
+
+/* 
+  --------------------text herhaal ----------------------- */
+.text1 {
+  @include herhaal-text;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.text2 {
+  @include herhaal-text;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.text3 {
+  @include herhaal-text;
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.text4 {
+  @include herhaal-text;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.text5 {
+  @include herhaal-text;
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.text6 {
+  @include herhaal-text;
+  grid-row: 2;
+  grid-column: 3;
+}
+
+/* 
+  ----------------------------hover------------------------- */
+
+.text1:hover {
+  @include herhaal-hover();
+}
+
+.text2:hover {
+  opacity: 0.7;
+}
+
+.text3:hover {
+  @include herhaal-hover();
+}
+
+.text4:hover {
+  opacity: 0.7;
+}
+
+.text5:hover {
+  @include herhaal-hover();
+}
+
+.text6:hover {
+  opacity: 0.7;
+}

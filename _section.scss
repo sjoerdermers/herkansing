@@ -1,0 +1,22 @@
+section {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  border-radius: 25px 25px 0 0;
+  margin-left: 50px;
+  margin-top: 50px;
+  -webkit-box-shadow: 20px 20px 50px grey;
+  box-shadow: 20px 20px 50px grey;
+}
+
+section p {
+  background-color: white;
+  color: rgba(55, 51, 105, 0.897);
+  font-size: x-large;
+  font-weight: 500;
+  margin: 30px 20px 100px 20px;
+  text-align: center;
+  line-height: 1.8;
+}

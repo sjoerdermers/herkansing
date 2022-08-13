@@ -1,0 +1,642 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #c3cfe2;
+  font-family: roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+  background-color: white;
+  display: flex;
+  width: 400px;
+  border-radius: 25px 25px 0 0;
+  margin-left: 50px;
+  margin-top: 50px;
+  box-shadow: 20px 20px 50px grey;
+}
+
+section p {
+  background-color: white;
+  color: rgba(55, 51, 105, 0.897);
+  font-size: x-large;
+  font-weight: 500;
+  margin: 30px 20px 100px 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+footer {
+  background-color: #686de0;
+  text-align: center;
+  width: 400px;
+  border-radius: 0 0 25px 25px;
+  margin-left: 50px;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  color: white;
+  box-shadow: 20px 20px 50px grey;
+}
+footer #voornaam {
+  background-color: #686de0;
+  font-size: x-large;
+  text-transform: uppercase;
+}
+footer #website {
+  background-color: #686de0;
+  border-radius: 0 0 25px 25px;
+  margin-top: 10px;
+  color: #c3cfe2;
+  font-size: large;
+}
+
+#fotosjoerd {
+  border-radius: 50%;
+  margin: 10px;
+  border: 8px solid white;
+  position: absolute;
+  top: 360px;
+  left: 180px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .fotos-totaal {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat 2, 400px;
+    grid-template-columns: repeat 3, 400px;
+  }
+  /* 
+    ----------------------Herhaal functies----------------------------- */
+  /* 
+    ----------------------foto's------------------------------ */
+  .foto1 {
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .foto2 {
+    grid-row: 1;
+    grid-column: 2;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+  }
+  .foto3 {
+    grid-row: 1;
+    grid-column: 3;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+  }
+  .foto4 {
+    grid-row: 2;
+    grid-column: 1;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+  }
+  .foto5 {
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .foto6 {
+    grid-row: 2;
+    grid-column: 3;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+  }
+  /* 
+    --------------------text herhaal ----------------------- */
+  .text1 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    transition-duration: 500ms;
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .text2 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    transition-duration: 500ms;
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .text3 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    transition-duration: 500ms;
+    grid-row: 1;
+    grid-column: 3;
+  }
+  .text4 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    transition-duration: 500ms;
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .text5 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    transition-duration: 500ms;
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .text6 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    transition-duration: 500ms;
+    grid-row: 2;
+    grid-column: 3;
+  }
+  /* 
+    ----------------------------hover------------------------- */
+  .text1:hover {
+    opacity: 0.7;
+  }
+  .text2:hover {
+    opacity: 0.7;
+  }
+  .text3:hover {
+    opacity: 0.7;
+  }
+  .text4:hover {
+    opacity: 0.7;
+  }
+  .text5:hover {
+    opacity: 0.7;
+  }
+  .text6:hover {
+    opacity: 0.7;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .fotos-totaal {
+    border: 3px solid black;
+    display: grid;
+    justify-content: center;
+    background-color: #c3cfe2;
+    grid-template-rows: repeat 3, 400px;
+    grid-template-columns: repeat 2, 400px;
+  }
+  /* 
+  ----------------------Herhaal functies----------------------------- */
+  /* 
+  ----------------------foto's------------------------------ */
+  .foto1 {
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .foto2 {
+    grid-row: 1;
+    grid-column: 2;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+  }
+  .foto3 {
+    grid-row: 2;
+    grid-column: 1;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+  }
+  .foto4 {
+    grid-row: 2;
+    grid-column: 2;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+  }
+  .foto5 {
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .foto6 {
+    grid-row: 3;
+    grid-column: 2;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+  }
+  /* 
+  --------------------text herhaal ----------------------- */
+  .text1 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    transition-duration: 500ms;
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .text2 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    transition-duration: 500ms;
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .text3 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    transition-duration: 500ms;
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .text4 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    transition-duration: 500ms;
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .text5 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    transition-duration: 500ms;
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .text6 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    transition-duration: 500ms;
+    grid-row: 3;
+    grid-column: 2;
+  }
+  /* 
+  ----------------------------hover------------------------- */
+  .text1:hover {
+    opacity: 0.7;
+  }
+  .text2:hover {
+    opacity: 0.7;
+  }
+  .text3:hover {
+    opacity: 0.7;
+  }
+  .text4:hover {
+    opacity: 0.7;
+  }
+  .text5:hover {
+    opacity: 0.7;
+  }
+  .text6:hover {
+    opacity: 0.7;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .fotos-totaal {
+    border: 3px solid black;
+    display: grid;
+    justify-content: center;
+    background-color: #c3cfe2;
+    grid-template-rows: repeat 6, 400px;
+    grid-template-columns: 400px;
+  }
+  /* 
+  ----------------------Herhaal functies----------------------------- */
+  /* 
+  ----------------------foto's------------------------------ */
+  .foto1 {
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+    grid-column: 1;
+    grid-row: 1/2;
+  }
+  .foto2 {
+    grid-row: 2/3;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+    grid-column: 1;
+  }
+  .foto3 {
+    grid-row: 3/4;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+    grid-column: 1;
+  }
+  .foto4 {
+    grid-row: 4/5;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+    grid-column: 1;
+  }
+  .foto5 {
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+    grid-column: 1;
+    grid-row: 5/6;
+  }
+  .foto6 {
+    grid-row: 6/7;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    margin: 2em;
+    grid-column: 1;
+  }
+  /* 
+  --------------------text herhaal ----------------------- */
+  .text1 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    grid-column: 1/2;
+    transition-duration: 500ms;
+    grid-row: 1/2;
+  }
+  .text2 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    grid-column: 1/2;
+    transition-duration: 500ms;
+    grid-row: 2/3;
+  }
+  .text3 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    grid-column: 1/2;
+    transition-duration: 500ms;
+    grid-row: 3/4;
+  }
+  .text4 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    grid-column: 1/2;
+    transition-duration: 500ms;
+    grid-row: 4/5;
+  }
+  .text5 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    grid-column: 1/2;
+    transition-duration: 500ms;
+    grid-row: 5/6;
+  }
+  .text6 {
+    opacity: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: roboto, verdana;
+    margin: 2em;
+    grid-column: 1/2;
+    transition-duration: 500ms;
+    grid-row: 6/7;
+  }
+  /* 
+  ----------------------------hover------------------------- */
+  .text1:hover {
+    opacity: 0.7;
+  }
+  .text2:hover {
+    opacity: 0.7;
+  }
+  .text3:hover {
+    opacity: 0.7;
+  }
+  .text4:hover {
+    opacity: 0.7;
+  }
+  .text5:hover {
+    opacity: 0.7;
+  }
+  .text6:hover {
+    opacity: 0.7;
+  }
+}
+.derdeOpdracht {
+  background-color: #c3cfe2;
+  display: grid;
+  height: 100vh;
+  width: 97.5%;
+  grid-template-columns: 1fr, 100px;
+  grid-template-rows: 1fr 300px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  list-style: none;
+  grid-area: 2/2;
+}
+ul li {
+  width: 250px;
+  position: relative;
+  left: 200px;
+}
+ul .blog {
+  background-color: #e17b77;
+  transition-duration: 1000ms;
+}
+ul .twitter {
+  background-color: #00aced;
+  transition-duration: 1000ms;
+}
+ul .linkedin {
+  background-color: #007bb6;
+  transition-duration: 1000ms;
+}
+ul .facebook {
+  background-color: #3b5998;
+  transition-duration: 1000ms;
+}
+ul .git-hub {
+  background-color: white;
+  transition-duration: 1000ms;
+}
+
+.blog:hover {
+  left: 100px;
+}
+
+.twitter:hover {
+  left: 100px;
+}
+
+.linkedin:hover {
+  left: 100px;
+}
+
+.facebook:hover {
+  left: 100px;
+}
+
+.git-hub:hover {
+  left: 100px;
+}/*# sourceMappingURL=styles.css.map */
